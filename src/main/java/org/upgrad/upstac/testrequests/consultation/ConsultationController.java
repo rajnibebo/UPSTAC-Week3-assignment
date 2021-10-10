@@ -44,7 +44,7 @@ public class ConsultationController {
     private UserLoggedInService userLoggedInService;
 
     @GetMapping("/in-queue")
-   // @PreAuthorize("hasAnyRole('DOCTOR')")
+    @PreAuthorize("hasAnyRole('DOCTOR')")
     public List<TestRequest> getForConsultations()  {
 
         // Implement this method
